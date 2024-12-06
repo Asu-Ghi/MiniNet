@@ -10,6 +10,16 @@
 #include <float.h>
 
 /*
+Matrix Structure.
+
+*/
+typedef struct {
+    int rows;
+    int cols;
+    double* data;
+} matrix;
+
+/*
 Activation function enum structure
 Enum to store what activation function is being used
 */

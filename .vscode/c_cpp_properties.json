@@ -3,7 +3,7 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/MiniNetV2/include/*/*"
+                "${workspaceFolder}/include/*/*"
             ],
             "defines": [],
             "macFrameworkPath": [

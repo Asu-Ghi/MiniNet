@@ -57,8 +57,7 @@ void calculate_catCE_loss(Loss* loss_func, matrix* Y) {
 
     // check if one hot is the correct size
     if (loss_func->X->cols != Y->cols) {
-        fprintf(stderr, "Error: Dimension 2 for one hot vectors and \ 
-            predictions do not match in calculate catCE loss.\n");
+        fprintf(stderr, "Error: Dimension 2 for one hot vectors and predictions do not match in calculate catCE loss.\n");
         exit(1);
     }
 
@@ -76,8 +75,7 @@ void calculate_catCE_loss(Loss* loss_func, matrix* Y) {
 
         // error handling if no true class is found
         if(true_class == -1) {
-            fprintf(stderr, "Error: No true class found in one hot vectors in \
-                        calculate cat CE loss. \n");
+            fprintf(stderr, "Error: No true class found in one hot vectors in calculate cat CE loss. \n");
             exit(1);
         }
 
@@ -102,8 +100,7 @@ void calculate_binCE_loss(Loss* loss_func, matrix* Y) {
 
     // Check for dimension compatibility
     if (loss_func->X->rows != Y->rows || Y->cols != 1) {
-        fprintf(stderr, "Error: Dimensionality Mismatch between prediction and true label dimensions \
-                        in calculate binary CE loss.\n");
+        fprintf(stderr, "Error: Dimensionality Mismatch between prediction and true label dimensions in calculate binary CE loss.\n");
         exit(1);
     }
 
